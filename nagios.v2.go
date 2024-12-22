@@ -59,7 +59,7 @@ func main() {
 			if err != nil {
 				log.Printf("Failed to run script at target time: %v", err)
 				log.Println("Retrying in 2 minutes...")
-				log.Println("Please check what is the error, check vpn 3uk....")
+				log.Println("Please check what is the error, check vpn web....")
 				time.Sleep(2 * time.Minute)
 				err := runNow(encodedURL, emailTo, emailCC)
 				if err != nil {
@@ -82,7 +82,7 @@ func main() {
 			if err != nil {
 				log.Printf("Failed to run script at target time after running now: %v", err)
 				log.Println("Retrying in 2 minutes...")
-				log.Println("Please check what is the error, check vpn 3uk....")
+				log.Println("Please check what is the error, check vpn web....")
 				time.Sleep(2 * time.Minute)
 				continue
 			}
